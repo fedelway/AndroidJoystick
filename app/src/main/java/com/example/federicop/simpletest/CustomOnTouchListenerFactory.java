@@ -22,11 +22,11 @@ public class CustomOnTouchListenerFactory {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if(motionEvent.getAction() == MotionEvent.ACTION_DOWN)
-                    new SendKeyStroke().execute(key,1);
+                    new SendKeyStroke().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,key,1);
                 else if(motionEvent.getAction() == MotionEvent.ACTION_UP)
-                    new SendKeyStroke().execute(key,0);
+                    new SendKeyStroke().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,key,0);
                 else if(motionEvent.getAction() == MotionEvent.ACTION_CANCEL)
-                    new SendKeyStroke().execute(key,0);
+                    new SendKeyStroke().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,key,0);
 
                 return true;
             }

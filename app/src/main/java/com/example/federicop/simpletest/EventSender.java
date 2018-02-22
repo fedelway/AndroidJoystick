@@ -1,9 +1,13 @@
 package com.example.federicop.simpletest;
 
+import android.os.AsyncTask;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
@@ -15,13 +19,29 @@ public class EventSender {
 
     Socket socket;
 
-    public EventSender(InetAddress address, int port) throws IOException
+    public InetAddress address;
+    public int port = 1060;
+
+    public void startConnection() throws IOException
     {
-        socket = new Socket(address,port);
+        if(address == null)
+            throw new NullPointerException();
+
+        socket = new Socket();
+        socket.connect(new InetSocketAddress(address,port),500);
         socket.setTcpNoDelay(true);
     }
 
+    public void stopConnection() throws IOException
+    {
+        socket.close();
+    }
+
     public void sendKey(int key, boolean press) throws IOException {
+        //Early return if connection not established
+        if(socket == null)
+            return;
+
         final int packetSize = 3 + 2 + 2 + 1;
 
         ByteArrayOutputStream stream = new ByteArrayOutputStream();

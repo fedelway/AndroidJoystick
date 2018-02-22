@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/startoption"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Start"
+        android:visible="true" />
+    <item
+        android:id="@+id/stopoption"
+        android:enabled="false"
+        android:title="Stop"
+        android:visible="false" />
+    <item
+        android:id="@+id/configoption"
+        android:enabled="true"
+        android:title="Config"
+        android:visible="true" />
+</menu>

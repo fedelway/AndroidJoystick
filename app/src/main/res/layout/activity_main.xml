@@ -6,6 +6,135 @@
     android:layout_height="match_parent"
     tools:context="com.example.federicop.simpletest.MainActivity">
 
+    <FrameLayout
+        android:layout_width="473dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/btnR2"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@drawable/widebtn"
+                android:shadowColor="#A8A876"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="R2"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/btnR1"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@drawable/widebtn"
+                android:shadowColor="#A8A876"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="R1"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032">
+
+            <Button
+                android:id="@+id/btnL2"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@drawable/widebtn"
+                android:shadowColor="#A8A876"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="L2"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/btnL1"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:background="@drawable/widebtn"
+                android:shadowColor="#A8A876"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="L1"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -47,7 +176,7 @@
                 android:layout_column="1"
                 android:layout_row="0"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -73,7 +202,7 @@
                 android:layout_column="0"
                 android:layout_row="1"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -99,7 +228,7 @@
                 android:layout_column="2"
                 android:layout_row="1"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -125,7 +254,7 @@
                 android:layout_column="1"
                 android:layout_row="2"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -173,7 +302,7 @@
                 android:layout_column="1"
                 android:layout_row="0"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -199,7 +328,7 @@
                 android:layout_column="0"
                 android:layout_row="1"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -225,7 +354,7 @@
                 android:layout_column="2"
                 android:layout_row="1"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -251,7 +380,7 @@
                 android:layout_column="1"
                 android:layout_row="2"
 
-                android:background="@drawable/dirbutton"
+                android:background="@drawable/dirbtnselector"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -324,124 +453,6 @@
             android:textSize="10sp"
             tools:layout_editor_absoluteX="307dp"
             tools:layout_editor_absoluteY="16dp" />
-    </LinearLayout>
-
-    <LinearLayout
-    android:layout_width="77dp"
-    android:layout_height="47dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="60dp"
-    android:layout_marginTop="8dp"
-    android:orientation="vertical"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.032">
-
-        <Button
-            android:id="@+id/btnL2"
-
-            android:layout_width="match_parent"
-
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-
-            android:layout_weight="1"
-            android:background="@drawable/widebtn"
-            android:shadowColor="#A8A876"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="L2"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5" />
-
-        <Button
-            android:id="@+id/btnL1"
-
-            android:layout_width="match_parent"
-
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-
-            android:layout_weight="1"
-            android:background="@drawable/widebtn"
-            android:shadowColor="#A8A876"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="L1"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="77dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032">
-
-        <Button
-            android:id="@+id/btnR2"
-
-            android:layout_width="match_parent"
-
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-
-            android:layout_weight="1"
-            android:background="@drawable/widebtn"
-            android:shadowColor="#A8A876"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="R2"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5" />
-
-        <Button
-            android:id="@+id/btnR1"
-
-            android:layout_width="match_parent"
-
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-
-            android:layout_weight="1"
-            android:background="@drawable/widebtn"
-            android:shadowColor="#A8A876"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="R1"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="16dp" />
-
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
